@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Acount</title>
+</head>
+
+<body>
+    <script>
+        function ValidateAcount(acount) {
+            let regexp = /^[_a-z0-9]{6,}$/;
+            if (regexp.test(acount)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log('123abc_', ValidateAcount('123abc_'));
+        console.log('_abc123', ValidateAcount('_abc123'));
+        console.log('12345', ValidateAcount('12345'));
+        console.log('.@', ValidateAcount('.@'));
+    </script>
+</body>
+
+</html>

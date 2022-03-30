@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstLetterUpperCase</title>
+</head>
+
+<body>
+    <script>
+        function isFirstLettleUppercase(str) {
+            regexp = /^[A-Z]/;
+            if (regexp.test(str)) {
+                console.log('Kí tự đầu tiên là chữ viết hoa')
+            } else {
+                console.log('Kí tự đầu tiên không phải là chữ viết hoa')
+            }
+        }
+        isFirstLettleUppercase('Hai');
+        isFirstLettleUppercase('NHai');
+        isFirstLettleUppercase('haI');
+    </script>
+</body>
+
+</html>
